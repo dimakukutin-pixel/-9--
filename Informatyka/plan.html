@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#eef2ff" />
+    <title>План навчання | Інформатика</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="container nav">
+        <div class="brand" id="planBrand">План навчання</div>
+        <nav>
+          <a href="index.html">Головна</a>
+          <a href="select-class.html">Обрати клас</a>
+          <a href="plan.html?grade=6">6 клас</a>
+          <a href="plan.html?grade=7">7 клас</a>
+          <a href="plan.html?grade=8">8 клас</a>
+          <a href="plan.html?grade=9">9 клас</a>
+          <a href="plan.html?grade=10">10 клас</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="plan-page">
+      <div class="container">
+        <section class="plan-hero">
+          <p class="eyebrow">Маршрут навчання</p>
+          <h1 id="planTitle">План навчання з інформатики</h1>
+          <p id="planDescription">40 тем у чотирьох розділах. Переглянь план, щоб знати, що вивчатимеш далі.</p>
+          <div class="plan-summary">
+            <span>4 розділи</span>
+            <span>10 тем у кожному</span>
+            <span>40 тем загалом</span>
+          </div>
+        </section>
+
+        <div id="planSections" class="plan-sections"></div>
+
+        <section class="plan-confirmation">
+          <label class="plan-review-check">
+            <input id="planReviewed" type="checkbox" />
+            <span>Я переглянув/переглянула план і готовий/готова почати навчання.</span>
+          </label>
+          <a id="startCourse" class="primary-btn plan-start-btn" hidden>Почати вчитись</a>
+        </section>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="container">Обери темп, повторюй матеріал і рухайся крок за кроком.</div>
+    </footer>
+
+    <script src="curriculum.js"></script>
+    <script src="nush-curriculum.js"></script>
+    <script src="plan.js"></script>
+  </body>
+</html>

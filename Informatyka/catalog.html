@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#eef2ff" />
+    <title>Матеріали курсу | Інформатика</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="container nav">
+        <div class="brand" id="catalogBrand">Матеріали курсу</div>
+        <nav>
+          <a href="index.html">Головна</a>
+          <a id="catalogPlanLink" href="plan.html?grade=9">План навчання</a>
+          <a id="catalogCourseLink" href="lesson.html?topic=1">Почати курс</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="catalog-page">
+      <div class="container">
+        <section class="catalog-hero">
+          <p class="eyebrow" id="catalogGradeLabel">Довідник курсу · 9 клас</p>
+          <h1 id="catalogTitle">Матеріали курсу</h1>
+          <p id="catalogDescription">Обери розділ, щоб переглянути теми, правила або тестові запитання без відповідей.</p>
+          <nav class="catalog-grade-tabs" aria-label="Обрати клас">
+            <a href="catalog.html?grade=6&type=topics" data-catalog-grade="6">6 клас</a>
+            <a href="catalog.html?grade=7&type=topics" data-catalog-grade="7">7 клас</a>
+            <a href="catalog.html?grade=8&type=topics" data-catalog-grade="8">8 клас</a>
+            <a href="catalog.html?grade=9&type=topics" data-catalog-grade="9">9 клас</a>
+            <a href="catalog.html?grade=10&type=topics" data-catalog-grade="10">10 клас</a>
+          </nav>
+          <nav class="catalog-tabs" aria-label="Розділи матеріалів">
+            <a href="catalog.html?grade=9&type=topics" data-catalog-type="topics">Теми</a>
+            <a href="catalog.html?grade=9&type=rules" data-catalog-type="rules">Правила</a>
+            <a href="catalog.html?grade=9&type=tests" data-catalog-type="tests">Тести без відповідей</a>
+          </nav>
+        </section>
+        <div id="catalogContent" class="catalog-content" aria-live="polite"></div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="container">Повторюй матеріал і навчайся у власному темпі.</div>
+    </footer>
+
+    <script src="curriculum.js"></script>
+    <script src="nush-curriculum.js"></script>
+    <script src="catalog.js"></script>
+  </body>
+</html>

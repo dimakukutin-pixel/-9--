@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Навчання | Інформатика 9 клас</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="container nav">
+        <div class="brand">Інформатика 9</div>
+        <nav>
+          <a href="index.html">Головна</a>
+          <a href="select-class.html">Обрати клас</a>
+          <a href="#studyAssistant" data-open-study-assistant>Помічник</a>
+          <a href="plan.html?grade=9">План навчання</a>
+          <a href="plan.html?grade=10">10 клас</a>
+          <a href="#courseFinalTest">Підсумковий тест</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="lesson-page">
+      <div class="container">
+        <section class="grade10-intro">
+          <div>
+            <p class="eyebrow">Навчальний курс · 9 клас</p>
+            <h1>HTML, CSS, JavaScript і Python</h1>
+            <p id="courseDescription">40 тем у чотирьох розділах. Вивчай у власному темпі та відстежуй свій прогрес.</p>
+          </div>
+          <div class="grade10-progress-card">
+            <div class="progress-labels">
+              <span>Твій прогрес</span>
+              <strong id="grade9ProgressText">0 із 40 тем</strong>
+            </div>
+            <div
+              class="progress-bar"
+              role="progressbar"
+              aria-label="Прогрес курсу 9 класу"
+              aria-valuemin="0"
+              aria-valuemax="40"
+              aria-valuenow="0"
+            >
+              <div id="grade9ProgressFill" class="progress-fill"></div>
+            </div>
+          </div>
+        </section>
+
+        <div class="lesson-shell">
+          <aside class="topic-sidebar lesson-sidebar">
+            <div class="lesson-sidebar-top">
+              <p class="eyebrow">Навчальний маршрут</p>
+              <h2>План тем 9 класу</h2>
+            </div>
+            <div id="topicList" class="topic-list"></div>
+            <div class="lesson-back-wrap">
+              <a class="secondary-btn" href="plan.html?grade=9">Назад до плану курсу</a>
+            </div>
+          </aside>
+
+          <div id="topicDetail" class="topic-detail lesson-detail"></div>
+        </div>
+      <section id="courseFinalTest" class="grade10-final-test">
+        <div class="container"></div>
+      </section>
+      </div>
+    </main>
+
+    <script src="curriculum.js"></script>
+    <script src="nush-curriculum.js"></script>
+    <script src="study-assistant.js"></script>
+    <script src="course.js"></script>
+  </body>
+</html>
